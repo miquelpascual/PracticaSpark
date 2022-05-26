@@ -26,7 +26,7 @@ RUN apt-get update -y && \
     apt-get install -y python3-pip && \
     pip3 install gdown matplotlib scipy scikit-learn 
 # Dependències pyspark
-RUN pip3 install pandas numpy pyarrow py4j 
+RUN pip3 install pandas numpy pyarrow py4j pyarrow
 
 # Realizamos la instalación de la versión especificada de Pyspark y JupyterLab
 RUN pip3 install wget pyspark==${spark_version} jupyterlab==${jupyterlab_version}
